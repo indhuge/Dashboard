@@ -1,16 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-import ButtonRedesSociais from '../components/ButtonRedesSociais';
+import SelectRedesSociais from '../components/SelectRedesSociais';
 
 const meta = {
-    title: 'Login/ButtonRedesSociais',
-    component: ButtonRedesSociais,
+    title: 'Login/RedesSociais/Select',
+    component: SelectRedesSociais,
     parameters: {
         layout: 'centered',
     },
     tags: ['autodocs'],
     args: { onClick: fn() },
-} satisfies Meta<typeof ButtonRedesSociais>;
+} satisfies Meta<typeof SelectRedesSociais>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -28,6 +28,7 @@ export const Email: Story = {
         label: 'Email',
         imagem: icones.email,
         alt: 'email',
+        active: true
     },
 };
 
@@ -36,6 +37,7 @@ export const Whatsapp: Story = {
         label: 'Whatsapp',
         imagem: icones.whatsapp,
         alt: 'whatsapp',
+        active: false
     },
 };
 
@@ -44,5 +46,6 @@ export const SMS: Story = {
         label: 'SMS',
         imagem: icones.sms,
         alt: 'sms',
+        active: true
     },
 };
