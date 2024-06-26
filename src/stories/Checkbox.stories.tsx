@@ -15,6 +15,7 @@ export default {
             defaultValue: false,
         },
     },
+    tags: ['autodocs'],
 } as Meta;
 
 const Template: StoryFn<CheckboxProps> = (args: CheckboxProps) => (

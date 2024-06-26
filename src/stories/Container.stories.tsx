@@ -17,6 +17,7 @@ export default {
             ],
         },
     },
+    tags: ['autodocs'],
 } as Meta;
 
 const renderJSX = (jsxString: string) => {
