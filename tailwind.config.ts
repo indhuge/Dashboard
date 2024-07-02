@@ -56,6 +56,7 @@ const config: Config = {
         "circular-0-0-0-1": "cubic-bezier(0, 0, 0, 1)",
       },
       borderWidth: { "1": "1px" },
+      logoWidth: "130.99px",
     },
   },
   plugins: [],
